@@ -1,16 +1,19 @@
-import React from 'react';
+import React, { FunctionComponent } from 'react';
 
-import { StyleSheet, TextInput, View } from 'react-native';
+import { StyleSheet, TextInput, View, TextInputProps } from 'react-native';
 
 import Icon from 'react-native-vector-icons/Ionicons';
 
 import colors from '../../../constants/colors';
 
-const SearchInput = () => {
+interface ISearchInputProps extends Partial<TextInputProps> {}
+
+const SearchInput: FunctionComponent<ISearchInputProps> = props => {
   return (
     <View style={styles.container}>
       <Icon name="ios-search" size={30} color={colors.GREY_PLACEHOLDER} />
       <TextInput
+        {...props}
         placeholder="Search for a Movie, People or TV show"
         style={styles.input}
       />
@@ -31,7 +34,6 @@ const styles = StyleSheet.create({
     borderBottomRightRadius: 20,
     borderTopRightRadius: 20,
     marginLeft: 10,
-    width: 250,
   },
 });
 

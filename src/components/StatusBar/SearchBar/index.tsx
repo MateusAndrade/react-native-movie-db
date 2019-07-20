@@ -1,6 +1,6 @@
-import React, { FunctionComponent } from 'react';
+import React, { FunctionComponent, useState } from 'react';
 
-import { StyleSheet, Text, View, StatusBar } from 'react-native';
+import { StyleSheet, View, StatusBar } from 'react-native';
 
 import colors from '../../../constants/colors';
 
@@ -12,6 +12,16 @@ import { SearchInput } from '../../Inputs';
 interface ISearchBarProps extends IStatusBarProps {}
 
 const SearchBar: FunctionComponent<ISearchBarProps> = () => {
+  const [search, setSearch] = useState<string>('');
+
+  const onSearch = (searchText: string) => {
+    setSearch(searchText);
+  };
+
+  const callSearch = () => {
+    console.log('Search for ==>', search);
+  };
+
   return (
     <View style={[styles.container, styles.row]}>
       <StatusBar
@@ -19,7 +29,12 @@ const SearchBar: FunctionComponent<ISearchBarProps> = () => {
         barStyle="light-content"
       />
       <StackedLogo height={40} width={60} resizeMode="contain" />
-      <SearchInput />
+      <SearchInput
+        onChangeText={onSearch}
+        onSubmitEditing={callSearch}
+        returnKeyType="done"
+        value={search}
+      />
     </View>
   );
 };
