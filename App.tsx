@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { FunctionComponent } from 'react';
 
-import { Text, SafeAreaView } from 'react-native';
+import { SafeAreaView } from 'react-native';
 
 import AppNavigation from './src/navigation';
 
-const App = () => {
+const App: FunctionComponent<{}> = () => {
   return (
     <SafeAreaView style={{ flex: 1, backgroundColor: 'red' }}>
       <AppNavigation />

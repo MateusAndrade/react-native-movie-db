@@ -1,6 +1,6 @@
 import { createAppContainer, createStackNavigator } from 'react-navigation';
 
-import routes from '../navigation/routes';
+import routes from './routes';
 
 import Home from '../screens/Home';
 
