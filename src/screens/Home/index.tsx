@@ -4,7 +4,7 @@ import { Text, View } from 'react-native';
 
 const Home: FunctionComponent<{}> = () => {
   return (
-    <View style={{ backgroundColor: 'red', flex: 1 }}>
+    <View style={{ flex: 1 }}>
       <Text>Home</Text>
     </View>
   );

@@ -1,6 +1,8 @@
 import React, { FunctionComponent } from 'react';
 
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, StatusBar } from 'react-native';
+
+import colors from '../../../constants/colors';
 
 import { IStatusBarProps } from '../interfaces/status-bar';
 
@@ -11,7 +13,11 @@ interface ISearchBarProps extends IStatusBarProps {}
 const SearchBar: FunctionComponent<ISearchBarProps> = () => {
   return (
     <View style={[styles.container, styles.row]}>
-      <StackedLogo height={30} width={40} resizeMode="contain" />
+      <StatusBar
+        backgroundColor={colors.STATUS_BAR_HOME}
+        barStyle="light-content"
+      />
+      <StackedLogo height={40} width={60} resizeMode="contain" />
       <Text>SearchBar</Text>
     </View>
   );
@@ -20,7 +26,8 @@ const SearchBar: FunctionComponent<ISearchBarProps> = () => {
 const styles = StyleSheet.create({
   container: {
     alignItems: 'center',
-    height: 50,
+    backgroundColor: colors.LOGO_HOME_BACKGROUND,
+    height: 60,
   },
   row: {
     flexDirection: 'row',
