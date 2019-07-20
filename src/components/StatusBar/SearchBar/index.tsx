@@ -7,6 +7,7 @@ import colors from '../../../constants/colors';
 import { IStatusBarProps } from '../interfaces/status-bar';
 
 import { StackedLogo } from '../../Logos';
+import { SearchInput } from '../../Inputs';
 
 interface ISearchBarProps extends IStatusBarProps {}
 
@@ -18,7 +19,7 @@ const SearchBar: FunctionComponent<ISearchBarProps> = () => {
         barStyle="light-content"
       />
       <StackedLogo height={40} width={60} resizeMode="contain" />
-      <Text>SearchBar</Text>
+      <SearchInput />
     </View>
   );
 };
@@ -27,6 +28,7 @@ const styles = StyleSheet.create({
   container: {
     alignItems: 'center',
     backgroundColor: colors.LOGO_HOME_BACKGROUND,
+    elevation: 2,
     height: 60,
   },
   row: {
