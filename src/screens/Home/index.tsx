@@ -1,15 +1,33 @@
-import React, { FunctionComponent, useEffect } from 'react';
+import React, { FunctionComponent, useEffect, useState } from 'react';
 
-import { StyleSheet, Text, ScrollView } from 'react-native';
+import { FlatList, StyleSheet, Text, View } from 'react-native';
 
 import DiscoverProvider from '../../../sdk/discover/discover.provider';
 
+import {
+  IDiscoverDomain,
+  IDiscoverMovieSuccess,
+} from '../../../sdk/discover/discover.interface';
+
+import { SimpleMovieBox } from '../../components';
+
 const Home: FunctionComponent<{}> = () => {
+  const [popularMovies, setPopulerMovies] = useState<IDiscoverDomain[]>([]);
+
   const fetchMovies = async () => {
     const { ok, data } = await DiscoverProvider.discoverMovies({
-      primary_release_year: 2019,
+      primary_release_year: new Date().getFullYear(),
     });
-    console.log('ok, data', ok, data);
+
+    if (ok) {
+      const { results } = data as IDiscoverMovieSuccess;
+      setPopulerMovies(results);
+    }
+  };
+
+  // TODO: Add select movie logic
+  const onSelectMovie = (movie: IDiscoverDomain) => {
+    console.log('movie', movie);
   };
 
   useEffect(() => {
@@ -17,15 +35,28 @@ const Home: FunctionComponent<{}> = () => {
   }, []);
 
   return (
-    <ScrollView style={styles.container}>
-      <Text>Home</Text>
-    </ScrollView>
+    <View style={styles.container}>
+      <View style={styles.flatListContainer}>
+        <FlatList
+          data={popularMovies}
+          horizontal={true}
+          keyExtractor={(item: IDiscoverDomain) => `k=${item.id}`}
+          renderItem={({ item }) => (
+            <SimpleMovieBox onSelectMovie={onSelectMovie} {...item} />
+          )}
+          showsHorizontalScrollIndicator={false}
+        />
+      </View>
+    </View>
   );
 };
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+  },
+  flatListContainer: {
+    height: 260,
   },
 });
 
