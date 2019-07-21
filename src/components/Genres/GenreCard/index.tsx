@@ -1,29 +1,25 @@
 import React, { FunctionComponent, useMemo } from "react";
 
-import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
-
-import LinearGradient from 'react-native-linear-gradient';
+import { StyleSheet, Text, TouchableOpacity } from "react-native";
 
 import colors from '../../../constants/colors';
 
 import { IGenreDomain } from "../../../../sdk/genre/genre.interface";
 
-const generateRandomGradient = (gradients: string[][]): string[] =>
-  gradients[Math.floor(Math.random() * gradients.length)];
+const generateRandomBackground = (backgrounds: string[]): string =>
+  backgrounds[Math.floor(Math.random() * backgrounds.length)];
 
 interface IGenreProps extends IGenreDomain {
   onSelectGenre: (genre: IGenreDomain) => void;
 }
 
 const GenreCard: FunctionComponent<IGenreProps> = ({ onSelectGenre, id, name }) => {
-  const gradient: string[] = useMemo(() => generateRandomGradient(colors.GRADIENTS_GENRES), colors.GRADIENTS_GENRES) ;
+  const backgroundColor: string = useMemo(() => generateRandomBackground(colors.GENRE_BACKGROUNDS), colors.GENRE_BACKGROUNDS) ;
 
   return (
-    <LinearGradient style={[styles.container]} colors={gradient}>
-      <TouchableOpacity onPress={() => onSelectGenre({ id, name })}>
-        <Text ellipsizeMode="tail" numberOfLines={1} style={styles.genreName}>{name}</Text>
-      </TouchableOpacity>
-    </LinearGradient>
+    <TouchableOpacity style={[styles.container, { backgroundColor }]} onPress={() => onSelectGenre({ id, name })}>
+      <Text ellipsizeMode="tail" numberOfLines={1} style={styles.genreName}>{name}</Text>
+    </TouchableOpacity>
   );
 };
 

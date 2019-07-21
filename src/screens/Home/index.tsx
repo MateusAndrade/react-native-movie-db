@@ -1,6 +1,6 @@
 import React, { FunctionComponent, useEffect, useState } from 'react';
 
-import { StyleSheet, View } from 'react-native';
+import { StyleSheet, Text, View } from 'react-native';
 
 import SplashScreen from 'react-native-splash-screen';
 
@@ -18,6 +18,7 @@ import { SimpleMovieList, GenreList } from '../../components';
 
 const Home: FunctionComponent<{}> = () => {
   const [popularMovies, setPopulerMovies] = useState<IDiscoverDomain[]>([]);
+  const [isLoadingPopularMovies, setIsLoadingPopularMovies] = useState<boolean>(true);
 
   const [genres, setGenres] = useState<IGenreDomain[]>([]);
 
@@ -26,11 +27,11 @@ const Home: FunctionComponent<{}> = () => {
   const fetchMovies = async () => {
     const { ok, data } = await DiscoverProvider.discoverMovies();
 
-    SplashScreen.hide();
-
     if (ok) {
       const { results } = data as IDiscoverMovieSuccess;
       setPopulerMovies(results);
+      setIsLoadingPopularMovies(false);
+      SplashScreen.hide();
     }
   };
 
@@ -60,12 +61,18 @@ const Home: FunctionComponent<{}> = () => {
 
   return (
     <View style={styles.container}>
-      <SimpleMovieList
-        data={popularMovies}
-        icon="ios-trending-up"
-        onSelectMovie={onSelectMovie}
-        title="Most popular releases:"
-      />
+      {isLoadingPopularMovies ? (
+        <View>
+          <Text>Loading...</Text>
+        </View>
+      ) : (
+        <SimpleMovieList
+          data={popularMovies}
+          icon="ios-trending-up"
+          onSelectMovie={onSelectMovie}
+          title="Most popular releases:"
+        />
+      )}
       <GenreList
         data={genres}
         icon="ios-film"        
