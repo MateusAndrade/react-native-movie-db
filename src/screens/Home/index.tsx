@@ -1,6 +1,8 @@
 import React, { FunctionComponent, useEffect, useState } from 'react';
 
-import { FlatList, StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, View } from 'react-native';
+
+import SplashScreen from 'react-native-splash-screen';
 
 import DiscoverProvider from '../../../sdk/discover/discover.provider';
 
@@ -16,6 +18,8 @@ const Home: FunctionComponent<{}> = () => {
 
   const fetchMovies = async () => {
     const { ok, data } = await DiscoverProvider.discoverMovies();
+
+    SplashScreen.hide();
 
     if (ok) {
       const { results } = data as IDiscoverMovieSuccess;
