@@ -1,12 +1,20 @@
 import React, { FunctionComponent } from 'react';
 
-import { StyleSheet, TextInput, View, TextInputProps } from 'react-native';
+import {
+  Dimensions,
+  StyleSheet,
+  TextInput,
+  View,
+  TextInputProps,
+} from 'react-native';
 
 import Icon from 'react-native-vector-icons/Ionicons';
 
 import colors from '../../../constants/colors';
 
 interface ISearchInputProps extends Partial<TextInputProps> {}
+
+const { width } = Dimensions.get('screen');
 
 const SearchInput: FunctionComponent<ISearchInputProps> = props => {
   return (
@@ -34,6 +42,7 @@ const styles = StyleSheet.create({
     borderBottomRightRadius: 20,
     borderTopRightRadius: 20,
     fontFamily: 'Source Sans Pro',
+    width: width - 100,
   },
 });
 
