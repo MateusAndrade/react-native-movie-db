@@ -30,6 +30,10 @@ target 'MovieDB' do
 
   pod 'react-native-config', :path => '../node_modules/react-native-config'
 
+  pod 'RNVectorIcons', :path => '../node_modules/react-native-vector-icons'
+
+  pod 'react-native-splash-screen', :path => '../node_modules/react-native-splash-screen'
+
   target 'MovieDBTests' do
     inherit! :search_paths
     # Pods for testing
