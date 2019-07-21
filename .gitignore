@@ -1,5 +1,5 @@
 .env
-
+__mocks__/react-native-config.js
 # OSX
 #
 .DS_Store
