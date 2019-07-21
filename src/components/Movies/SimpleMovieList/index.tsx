@@ -23,7 +23,6 @@ const SimpleMovieList: FunctionComponent<ISimpleMovieListProps> = ({
   onSelectMovie,
   icon,
 }) => {
-  console.log('title', title);
   return (
     <View style={styles.flatListContainer}>
       {title && (
