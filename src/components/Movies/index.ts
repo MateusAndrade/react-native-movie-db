@@ -1,3 +1,5 @@
 import SimpleMovieBox from './SimpleMovie';
 
-export { SimpleMovieBox };
+import SimpleMovieList from './SimpleMovieList';
+
+export { SimpleMovieBox, SimpleMovieList };

@@ -33,7 +33,7 @@ const styles = StyleSheet.create({
   input: {
     borderBottomRightRadius: 20,
     borderTopRightRadius: 20,
-    marginLeft: 10,
+    fontFamily: 'Source Sans Pro',
   },
 });
 

@@ -9,15 +9,13 @@ import {
   IDiscoverMovieSuccess,
 } from '../../../sdk/discover/discover.interface';
 
-import { SimpleMovieBox } from '../../components';
+import { SimpleMovieList } from '../../components';
 
 const Home: FunctionComponent<{}> = () => {
   const [popularMovies, setPopulerMovies] = useState<IDiscoverDomain[]>([]);
 
   const fetchMovies = async () => {
-    const { ok, data } = await DiscoverProvider.discoverMovies({
-      primary_release_year: new Date().getFullYear(),
-    });
+    const { ok, data } = await DiscoverProvider.discoverMovies();
 
     if (ok) {
       const { results } = data as IDiscoverMovieSuccess;
@@ -36,17 +34,12 @@ const Home: FunctionComponent<{}> = () => {
 
   return (
     <View style={styles.container}>
-      <View style={styles.flatListContainer}>
-        <FlatList
-          data={popularMovies}
-          horizontal={true}
-          keyExtractor={(item: IDiscoverDomain) => `k=${item.id}`}
-          renderItem={({ item }) => (
-            <SimpleMovieBox onSelectMovie={onSelectMovie} {...item} />
-          )}
-          showsHorizontalScrollIndicator={false}
-        />
-      </View>
+      <SimpleMovieList
+        data={popularMovies}
+        icon="ios-trending-up"
+        onSelectMovie={onSelectMovie}
+        title="Most popular releases:"
+      />
     </View>
   );
 };
