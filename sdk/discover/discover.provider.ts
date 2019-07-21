@@ -1,10 +1,8 @@
-import qs from 'query-string';
-
 import httpClient from '../http-client';
 
 import { IDiscoverQuery } from './discover.interface';
 
-const BASE_ENDPOINT: string = '/discover/movie';
+export const BASE_ENDPOINT: string = '/discover/movie';
 
 export class Discover {
   public discoverMovies(queryParams?: IDiscoverQuery) {
