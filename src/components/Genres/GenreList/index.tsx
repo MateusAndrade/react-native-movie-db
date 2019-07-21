@@ -23,7 +23,7 @@ const GenreList: FunctionComponent<IGenreListProps> = ({
   icon,
   onSelectGenre,
 }) => (
-  <View>
+  <View style={styles.flatListContainer}>
     {title && (
       <View style={styles.titleContainer}>
         {icon && (
@@ -33,6 +33,7 @@ const GenreList: FunctionComponent<IGenreListProps> = ({
       </View>
     )}
     <FlatList
+      showsHorizontalScrollIndicator={false}
       data={data}
       horizontal={true}
       keyExtractor={(item) => `k=${item.id}`}
@@ -43,7 +44,7 @@ const GenreList: FunctionComponent<IGenreListProps> = ({
 
 const styles = StyleSheet.create({
   flatListContainer: {
-    height: 280,
+    height: 150,
   },
   title: {
     fontFamily: 'Source Sans Pro',
