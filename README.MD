@@ -2,10 +2,15 @@
 
 A (unofficial) port of The MovieDB, written with react-native, typescript and only FunctionComponents!
 
+## Usage
+
+```sh
+npm i && npm start
+```
+
 ## Tests
 
 ```sh
-npm install
 npm test
 ```
 
