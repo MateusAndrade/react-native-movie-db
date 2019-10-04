@@ -32,6 +32,18 @@
 		A890EBD2B5CD4810BE73777E /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FF834E7595FD4AC8ACF5A617 /* MaterialIcons.ttf */; };
 		B1509225E0B64BB3AA3A3615 /* Feather.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8C2DC17FB1C045ADBA6AA70A /* Feather.ttf */; };
 		B3F0147E2347AEA200AC2303 /* libPods-MovieDB.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B3F0147D2347AEA200AC2303 /* libPods-MovieDB.a */; };
+		B3F0147F2347B34200AC2303 /* SourceSansPro-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D61A1CF4B4FF4F89B40A4666 /* SourceSansPro-Black.ttf */; };
+		B3F014802347B34200AC2303 /* SourceSansPro-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E9B46AB600104F2A81E479F1 /* SourceSansPro-BlackItalic.ttf */; };
+		B3F014812347B34200AC2303 /* SourceSansPro-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C91BDA25E7FE4EEA827CBD40 /* SourceSansPro-Bold.ttf */; };
+		B3F014822347B34200AC2303 /* SourceSansPro-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 967631B2BA674DAE9BEBDC41 /* SourceSansPro-BoldItalic.ttf */; };
+		B3F014832347B34200AC2303 /* SourceSansPro-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BBCC594DDA204171B514FFC8 /* SourceSansPro-ExtraLight.ttf */; };
+		B3F014842347B34200AC2303 /* SourceSansPro-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9835FE5958A94EA688C62CF6 /* SourceSansPro-ExtraLightItalic.ttf */; };
+		B3F014852347B34200AC2303 /* SourceSansPro-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4B1E8CFB1C5C47E3BBDFA57F /* SourceSansPro-Light.ttf */; };
+		B3F014862347B34200AC2303 /* SourceSansPro-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CA4CFDD9D0CE44C594687A1A /* SourceSansPro-LightItalic.ttf */; };
+		B3F014872347B34200AC2303 /* SourceSansPro-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0A5654928FF34C11A08706F9 /* SourceSansPro-Regular.ttf */; };
+		B3F014882347B34200AC2303 /* SourceSansPro-RegularItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5AA99C9495824CA78B1AE958 /* SourceSansPro-RegularItalic.ttf */; };
+		B3F014892347B34200AC2303 /* SourceSansPro-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B6CF00F8C6D44F46A6FE4D7F /* SourceSansPro-SemiBold.ttf */; };
+		B3F0148A2347B34200AC2303 /* SourceSansPro-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C72622B3E6BA44A893FEFA81 /* SourceSansPro-SemiBoldItalic.ttf */; };
 		C181663E3E6E42EC9D86004C /* EvilIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9D33593CB45D472CAD6838D4 /* EvilIcons.ttf */; };
 		C6194B959CB3BE2B821D66BC /* libPods-MovieDBTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E85744787073E23A535D48B /* libPods-MovieDBTests.a */; };
 		D0A71CDC02004598BEA4BDC7 /* FontAwesome5_Brands.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 06FBE15F6AE748BD9C2598AE /* FontAwesome5_Brands.ttf */; };
@@ -420,6 +432,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3F0147F2347B34200AC2303 /* SourceSansPro-Black.ttf in Resources */,
+				B3F014802347B34200AC2303 /* SourceSansPro-BlackItalic.ttf in Resources */,
+				B3F014812347B34200AC2303 /* SourceSansPro-Bold.ttf in Resources */,
+				B3F014822347B34200AC2303 /* SourceSansPro-BoldItalic.ttf in Resources */,
+				B3F014832347B34200AC2303 /* SourceSansPro-ExtraLight.ttf in Resources */,
+				B3F014842347B34200AC2303 /* SourceSansPro-ExtraLightItalic.ttf in Resources */,
+				B3F014852347B34200AC2303 /* SourceSansPro-Light.ttf in Resources */,
+				B3F014862347B34200AC2303 /* SourceSansPro-LightItalic.ttf in Resources */,
+				B3F014872347B34200AC2303 /* SourceSansPro-Regular.ttf in Resources */,
+				B3F014882347B34200AC2303 /* SourceSansPro-RegularItalic.ttf in Resources */,
+				B3F014892347B34200AC2303 /* SourceSansPro-SemiBold.ttf in Resources */,
+				B3F0148A2347B34200AC2303 /* SourceSansPro-SemiBoldItalic.ttf in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
 				05F89D7BE80C4CEEAA78E760 /* AntDesign.ttf in Resources */,
