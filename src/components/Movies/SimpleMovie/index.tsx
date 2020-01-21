@@ -65,7 +65,7 @@ const styles = StyleSheet.create({
   },
   popularity: {
     color: colors.WHITE,
-    fontFamily: 'Source Sans Pro',
+    fontFamily: 'SourceSansPro-Black',
     marginLeft: 5,
   },
 });

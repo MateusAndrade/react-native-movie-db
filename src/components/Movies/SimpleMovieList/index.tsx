@@ -51,7 +51,7 @@ const styles = StyleSheet.create({
     height: 280,
   },
   title: {
-    fontFamily: 'Source Sans Pro',
+    fontFamily: 'SourceSansPro-Black',
     marginLeft: 10,
   },
   titleContainer: {

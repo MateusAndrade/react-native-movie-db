@@ -41,7 +41,7 @@ const styles = StyleSheet.create({
   input: {
     borderBottomRightRadius: 20,
     borderTopRightRadius: 20,
-    fontFamily: 'Source Sans Pro',
+    fontFamily: 'SourceSansPro-Black',
     width: width - 100,
   },
 });
