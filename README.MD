@@ -53,3 +53,4 @@ npm test
 [] - Update React-Navigation to Last Version
 [] - Implent CI build using Github Actions
 [] - SetUp tests for each component and CodeCov
+[] - Fix incorrect token for MovieDB
