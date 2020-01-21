@@ -8,29 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* MovieDBTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* MovieDBTests.m */; };
-		05F89D7BE80C4CEEAA78E760 /* AntDesign.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3C75D87DC81941F2BD055CC8 /* AntDesign.ttf */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* LaunchScreen.xib */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		1BEF7FF394B74500A97F4D28 /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 34DFD75ABCEC4AA3B9893241 /* Octicons.ttf */; };
 		1C5DD6129AAB6C22D91B0DAE /* libPods-MovieDB-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C436D24B38E61A279FA19753 /* libPods-MovieDB-tvOSTests.a */; };
-		1E7260F9D28040E1ADF3F4A1 /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 105EA94EB2F649DFAEA892F6 /* SimpleLineIcons.ttf */; };
-		1EE72977639447719F6E080A /* FontAwesome5_Solid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DCA0662828684F8EBAE71F95 /* FontAwesome5_Solid.ttf */; };
 		2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* MovieDBTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* MovieDBTests.m */; };
-		2F652244554643DBB7695FC6 /* MaterialCommunityIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C802AF849B094321969EA1AD /* MaterialCommunityIcons.ttf */; };
 		33B58AD36256B01317EF63F0 /* libPods-MovieDB-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 36BC7F9BC2B25547D0628FA2 /* libPods-MovieDB-tvOS.a */; };
-		47F0004D07CF4D1D824483A6 /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CDCFAEAC0EA640888850F37F /* Entypo.ttf */; };
-		51A24EC92374461DBBEC9620 /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E923EAB40BB3461BAC906097 /* Zocial.ttf */; };
-		5257AE1160E64495BA470155 /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 327A6B5F13344AE8A8D4A378 /* Foundation.ttf */; };
-		73ADFE2C806944AD90F30BF1 /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F6C179408071424C92ED816A /* Ionicons.ttf */; };
-		965ED74A57A14977BB3D06F0 /* FontAwesome5_Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E6B97606E9914C94AAD7B79A /* FontAwesome5_Regular.ttf */; };
-		A7F3E61D56F84EFBB8715739 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7BDD2AA559F14E828B637C47 /* FontAwesome.ttf */; };
-		A890EBD2B5CD4810BE73777E /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FF834E7595FD4AC8ACF5A617 /* MaterialIcons.ttf */; };
-		B1509225E0B64BB3AA3A3615 /* Feather.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8C2DC17FB1C045ADBA6AA70A /* Feather.ttf */; };
 		B3F0147E2347AEA200AC2303 /* libPods-MovieDB.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B3F0147D2347AEA200AC2303 /* libPods-MovieDB.a */; };
 		B3F0147F2347B34200AC2303 /* SourceSansPro-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D61A1CF4B4FF4F89B40A4666 /* SourceSansPro-Black.ttf */; };
 		B3F014802347B34200AC2303 /* SourceSansPro-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E9B46AB600104F2A81E479F1 /* SourceSansPro-BlackItalic.ttf */; };
@@ -44,10 +31,7 @@
 		B3F014882347B34200AC2303 /* SourceSansPro-RegularItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5AA99C9495824CA78B1AE958 /* SourceSansPro-RegularItalic.ttf */; };
 		B3F014892347B34200AC2303 /* SourceSansPro-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B6CF00F8C6D44F46A6FE4D7F /* SourceSansPro-SemiBold.ttf */; };
 		B3F0148A2347B34200AC2303 /* SourceSansPro-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C72622B3E6BA44A893FEFA81 /* SourceSansPro-SemiBoldItalic.ttf */; };
-		C181663E3E6E42EC9D86004C /* EvilIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9D33593CB45D472CAD6838D4 /* EvilIcons.ttf */; };
 		C6194B959CB3BE2B821D66BC /* libPods-MovieDBTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E85744787073E23A535D48B /* libPods-MovieDBTests.a */; };
-		D0A71CDC02004598BEA4BDC7 /* FontAwesome5_Brands.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 06FBE15F6AE748BD9C2598AE /* FontAwesome5_Brands.ttf */; };
-		FA01A417B7E148CFBDB8E9C4 /* Fontisto.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 03C324A75557406DAAE2196C /* Fontisto.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -388,6 +372,9 @@
 						CreatedOnToolsVersion = 6.2;
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
+					13B07F861A680F5B00A75B9A = {
+						ProvisioningStyle = Manual;
+					};
 					2D02E47A1E0B4A5D006451C7 = {
 						CreatedOnToolsVersion = 8.2.1;
 						ProvisioningStyle = Automatic;
@@ -446,22 +433,6 @@
 				B3F0148A2347B34200AC2303 /* SourceSansPro-SemiBoldItalic.ttf in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
-				05F89D7BE80C4CEEAA78E760 /* AntDesign.ttf in Resources */,
-				47F0004D07CF4D1D824483A6 /* Entypo.ttf in Resources */,
-				C181663E3E6E42EC9D86004C /* EvilIcons.ttf in Resources */,
-				B1509225E0B64BB3AA3A3615 /* Feather.ttf in Resources */,
-				A7F3E61D56F84EFBB8715739 /* FontAwesome.ttf in Resources */,
-				D0A71CDC02004598BEA4BDC7 /* FontAwesome5_Brands.ttf in Resources */,
-				965ED74A57A14977BB3D06F0 /* FontAwesome5_Regular.ttf in Resources */,
-				1EE72977639447719F6E080A /* FontAwesome5_Solid.ttf in Resources */,
-				FA01A417B7E148CFBDB8E9C4 /* Fontisto.ttf in Resources */,
-				5257AE1160E64495BA470155 /* Foundation.ttf in Resources */,
-				73ADFE2C806944AD90F30BF1 /* Ionicons.ttf in Resources */,
-				2F652244554643DBB7695FC6 /* MaterialCommunityIcons.ttf in Resources */,
-				A890EBD2B5CD4810BE73777E /* MaterialIcons.ttf in Resources */,
-				1BEF7FF394B74500A97F4D28 /* Octicons.ttf in Resources */,
-				1E7260F9D28040E1ADF3F4A1 /* SimpleLineIcons.ttf in Resources */,
-				51A24EC92374461DBBEC9620 /* Zocial.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -495,7 +466,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
+			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh\n";
 		};
 		0C123B015A5305767B2C24DE /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -560,10 +531,8 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-MovieDB/Pods-MovieDB-resources.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-MovieDB/Pods-MovieDB-resources.sh",
 				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf",
 				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Entypo.ttf",
 				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf",
@@ -582,8 +551,6 @@
 				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Zocial.ttf",
 			);
 			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AntDesign.ttf",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Entypo.ttf",
@@ -604,7 +571,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MovieDB/Pods-MovieDB-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MovieDB/Pods-MovieDB-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		91E54D0698B99EBE4ACCA7ED /* [CP] Check Pods Manifest.lock */ = {
@@ -802,8 +769,10 @@
 			baseConfigurationReference = 94ED3C4A616A00AF3D4F83A8 /* Pods-MovieDB.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = MovieDB/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -813,6 +782,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = MovieDB;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
@@ -822,7 +792,9 @@
 			baseConfigurationReference = B97BE223F95A3F8B7C0B03C5 /* Pods-MovieDB.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = MovieDB/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -832,6 +804,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = MovieDB;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;

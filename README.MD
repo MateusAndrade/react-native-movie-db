@@ -46,3 +46,10 @@ npm test
 - [react-test-renderer](https://ghub.io/react-test-renderer): React package for snapshot testing.
 - [typescript](https://ghub.io/typescript): TypeScript is a language for application scale JavaScript development
 
+## TODO
+
+[] - Migrate components to Styled Components
+[] - Apply a Dark Theme
+[] - Update React-Navigation to Last Version
+[] - Implent CI build using Github Actions
+[] - SetUp tests for each component and CodeCov

@@ -1,24 +1,29 @@
-import React, { FunctionComponent, useEffect, useState } from 'react';
+import React, { FunctionComponent, useEffect, useState } from "react";
 
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, Alert } from "react-native";
 
-import SplashScreen from 'react-native-splash-screen';
+import SplashScreen from "react-native-splash-screen";
 
-import DiscoverProvider from '../../../sdk/discover/discover.provider';
-import GenreProvider from '../../../sdk/genre/genre.provider';
+import DiscoverProvider from "../../../sdk/discover/discover.provider";
+import GenreProvider from "../../../sdk/genre/genre.provider";
 
 import {
   IDiscoverDomain,
-  IDiscoverMovieSuccess,
-} from '../../../sdk/discover/discover.interface';
+  IDiscoverMovieSuccess
+} from "../../../sdk/discover/discover.interface";
 
-import { IGenreDomain, IGenreSuccess } from '../../../sdk/genre/genre.interface';
+import {
+  IGenreDomain,
+  IGenreSuccess
+} from "../../../sdk/genre/genre.interface";
 
-import { SimpleMovieList, GenreList } from '../../components';
+import { SimpleMovieList, GenreList } from "../../components";
 
 const Home: FunctionComponent<{}> = () => {
   const [popularMovies, setPopulerMovies] = useState<IDiscoverDomain[]>([]);
-  const [isLoadingPopularMovies, setIsLoadingPopularMovies] = useState<boolean>(true);
+  const [isLoadingPopularMovies, setIsLoadingPopularMovies] = useState<boolean>(
+    true
+  );
 
   const [genres, setGenres] = useState<IGenreDomain[]>([]);
 
@@ -31,8 +36,11 @@ const Home: FunctionComponent<{}> = () => {
       const { results } = data as IDiscoverMovieSuccess;
       setPopulerMovies(results);
       setIsLoadingPopularMovies(false);
-      SplashScreen.hide();
+    } else {
+      Alert.alert("Error", "Error Fetching Movies");
     }
+
+    SplashScreen.hide();
   };
 
   const fetchGenreMovies = async () => {
@@ -46,12 +54,12 @@ const Home: FunctionComponent<{}> = () => {
 
   // TODO: Add select movie logic
   const onSelectMovie = (movie: IDiscoverDomain) => {
-    console.log('movie', movie);
+    console.log("movie", movie);
   };
 
   // TODO: Add select genre logic
   const onSelectGenre = (genre: IGenreDomain) => {
-    console.log('genre', genre);
+    console.log("genre", genre);
   };
 
   useEffect(() => {
@@ -75,7 +83,7 @@ const Home: FunctionComponent<{}> = () => {
       )}
       <GenreList
         data={genres}
-        icon="ios-film"        
+        icon="ios-film"
         onSelectGenre={onSelectGenre}
         title="Looking for a genre?"
       />
@@ -85,11 +93,11 @@ const Home: FunctionComponent<{}> = () => {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
+    flex: 1
   },
   flatListContainer: {
-    height: 260,
-  },
+    height: 260
+  }
 });
 
 export default Home;
