@@ -23,7 +23,7 @@
     "react-native-splash-screen": "^3.2.0",
     "react-native-vector-icons": "^6.6.0",
     "react-navigation": "^3.11.1",
-    "yarn": "^1.17.3"
+    "yarn": "^1.22.0"
   },
   "devDependencies": {
     "@babel/core": "^7.6.2",
